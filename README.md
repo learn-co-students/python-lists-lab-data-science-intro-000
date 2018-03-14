@@ -1,442 +1,167 @@
 
-# Introduction to lists
+# Lists Lab
 
-So far we have worked with individual pieces of data like the string `hello`, then with variables we saw how to give this data a name with variables.  Well in this lesson, we'll see how we can group data together with lists.  
+### Introduction
 
-### Creating a list 
+Ok, so now that we have gotten a sense of how to read from a list and alter a list in Python, let's put this knowledge to practice. 
 
-A list is our first form of a collection.  A collection is just a way of grouping data together, and lists certainly accomplish this.  For example, let's consider the top cities to travel to according to Travel and Leisure.  We'll see it below, but we must stay focused on Python and data! 
+### Objectives
 
-#### Travel Locations
-1. Solta
-2. Greenville
-3. Buenos Aires
-4. Los Cabos
-5. Walla Walla Valley
-6. Marakesh
-7. Albuquerque
-8. Archipelago Sea
-9. Iguazu Falls
-10. Salina Island
-11. Toronto
-12. Pyeongchang
+* Practice reading one and multiple elements from lists
+* Practice altering data in lists
+* Practice add elements and removing elements from lists
 
-Ok, and this is how we express this in Python.
+### Our initial data structure 
 
-
-```python
-['Solta', 'Greenville', 'Buenos Aires', 'Los Cabos', 'Walla Walla Valley', 'Marakesh', 'Albuquerque', 'Archipelago Sea', 'Iguazu Falls', 'Salina Island', 'Toronto', 'Pyeongchang']
-```
-
-
-
-
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     'Walla Walla Valley',
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang']
-
-
-
-So we indicate that we are initializing a `list` by placing a bracket, `[` (located above of the return key), and end the list with a closing bracket `']'`.  To separate each item in the list, called an element, we place a comma.
-
-
-```python
-['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'New Mexico', 'Finland', 'Argentina', 'Italy', 'Canada', 'South Korea']
-```
-
-
-
-
-    ['Croatia',
-     'USA',
-     'Argentina',
-     'Mexico',
-     'USA',
-     'Morocco',
-     'New Mexico',
-     'Finland',
-     'Argentina',
-     'Italy',
-     'Canada',
-     'South Korea']
-
-
-
-And of course, we can set each list equal to variable so that we can name each list.
+In the previous lesson, we had a list of top travel cities.
 
 
 ```python
 top_travel_cities = ['Solta', 'Greenville', 'Buenos Aires', 'Los Cabos', 'Walla Walla Valley', 'Marakesh', 'Albuquerque', 'Archipelago Sea', 'Iguazu Falls', 'Salina Island', 'Toronto', 'Pyeongchang']
 ```
 
+> Remember to press shift enter to run each gray block of code.
+
+In this lesson we can work with a list of each associated countries for each of those travel cities.
+
 
 ```python
-top_travel_cities
+countries = ['Croatia',
+ 'USA',
+ 'Argentina',
+ 'Mexico',
+ 'USA',
+ 'Morocco',
+ 'New Mexico',
+ 'Finland',
+ 'Argentina',
+ 'Italy',
+ 'Canada',
+ 'South Korea']
 ```
 
+Ok, so the list of countries associated with each city has been assigned to the variable `countries`.  Now we will work with reading and manipulating this list.
 
+### Accessing elements from lists
 
-
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     'Walla Walla Valley',
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang']
-
-
+First, access the third to last element from `countries` and set it equal to the variable `italy`.
 
 
 ```python
-countries_of_top_cities = ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'New Mexico', 'Finland', 'Argentina', 'Italy', 'Canada', 'South Korea']
+italy = None # 'Italy'
+italy
 ```
 
-### Accessing Elements of Lists
-
-Now our `top_travel_cities` list is contains multiple elements.  And just like we numbered the elements of a list with text:
-
-1. Solta
-2. Greenville
-3. Buenos Aires
-
-A list in Python also assigns a number to each element.
+> We assign the varible `italy` equal to `None`, but you should change the word `None` to code that uses the `countries` list to assign `italy` to `'Italy'`.
 
 
 ```python
-top_travel_cities
+italy # 'Italy'
 ```
 
-
-
-
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     'Walla Walla Valley',
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang']
-
-
+Now access the fourth element and set it equal to the variable `mexico`.
 
 
 ```python
-top_travel_cities[0]
+mexico = None
+mexico
 ```
 
-
-
-
-    'Solta'
-
-
-
-In the above line we are referencing a list and then using the brackets to access specific elements of our list.  We access elements in a list with the `index`, and there is a separate index for each element in the list.  It begins at the number zero, increases for every element thereafter.
-
-So to access the second element we write `top_travel_cities[1]`, and the third element is `top_travel_cities[2]`:
+Notice that the second through fifth elements are all in a row and all in the Western Hemisphere.  Assign that subset of elements to a variable called `kindof_neighbors`.
 
 
 ```python
-top_travel_cities[2]
+kindof_neighbors = None
+kindof_neighbors
 ```
 
+### Changing Elements
 
-
-
-    'Buenos Aires'
-
-
-
-How would we access the last element, well we could count all of the elements in the list, and `Pyeongchang` would just be one less than that.  Or we can ask Python to start from the back in move back one.
+Ok, now let's add a couple of countries onto this list.  At the end of the list, add the country 'Malta'.
 
 
 ```python
-top_travel_cities[-1]
+None # add code here
 ```
 
-
-
-
-    'Pyeongchang'
-
-
-
-And we can move back as many as we want.
+Then add the country 'Thailand'.
 
 
 ```python
-top_travel_cities[-2]
+None # add code here
 ```
 
-
-
-
-    'Toronto'
-
-
-
-### Accessing Multiple Elements
-
-Now imagine that we don't want to access just one element of a list, but multiple elements at once.  Python allows us to do that as well.
+Now your list of countries should look like the following.
 
 
 ```python
-top_travel_cities[0:2]
+countries 
+# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'New Mexico', 'Finland', 
+# 'Argentina', 'Italy',  'Canada', 'South Korea',  'Malta',  'Thailand']
 ```
 
-
-
-
-    ['Solta', 'Greenville']
-
-
-
-Ok, now to access elements of a list, inside of our brackets we are placing two numbers separated by a colon.  The first number indicates the index of the first element we want returned.  
-
-The second number could represent the number of elements we want returned back, or maybe it represents the stopping index of the elements that we are retrieving.  Looking at our `top_travel_cities` it could be either.
+You may have noticed that "New Mexico" is included in our list of countries.  That doesn't seem right.  Let's change 'New Mexico' to 'USA'.
 
 
 ```python
-top_travel_cities
-```
-
-
-
-
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     'Walla Walla Valley',
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang']
-
-
-
-So let's try a different experiment to answer our question.
-
-
-```python
-top_travel_cities[4:5]
-```
-
-
-
-
-    ['Walla Walla Valley']
-
-
-
-Ok, so that second number is not representing the number of elements we want returned.  Instead it must be used to indicate the index of the first element not selected.  
-
-
-```python
-top_travel_cities[4:6]
-```
-
-
-
-
-    ['Walla Walla Valley', 'Marakesh']
-
-
-
-This operation is called the `slice`.  So we can say we are `slicing` the elements with indices 4 and 5 in the line above.  Note that even though we are `slicing` elements, our list remains in tact.
-
-
-```python
-top_travel_cities
-```
-
-
-
-
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     'Walla Walla Valley',
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang']
-
-
-
-### Changing elements
-
-Now that we read and select certain elements from lists, let's work on changing these lists.  To add a new element to a list, we can use the `append` method.
-
-
-```python
-top_travel_cities.append('San Antonio')
-```
-
-Now let's take another look at `top_travel_cities`.
-
-
-```python
-top_travel_cities
-```
-
-
-
-
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     'Walla Walla Valley',
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang',
-     'San Antonio']
-
-
-
-You will see 'San Antonio' included in the list.  Now what if we accidentally add 'San Antonio' a second time to our list.  No worries, we can remove the last element from a list with the `pop` method.
-
-
-```python
-top_travel_cities.pop()
-```
-
-
-
-
-    'San Antonio'
-
-
-
-
-```python
-top_travel_cities
-```
-
-
-
-
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     'Walla Walla Valley',
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang']
-
-
-
-Now if we want to change an element from the middle of the list, we can access and then reassign that element.  So for example, let's change 'Walla Walla Valley' to the number 4.
-
-
-```python
-top_travel_cities[4]
-```
-
-
-
-
-    'Walla Walla Valley'
-
-
-
-
-```python
-top_travel_cities[4] = 4
+None # add code here
 ```
 
 
 ```python
-top_travel_cities
+countries 
+# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland', 
+# 'Argentina', 'Italy',  'Canada', 'South Korea',  'Malta',  'Thailand']
 ```
 
-
-
-
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     4,
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang']
-
-
-
-And our list is now changed.  It's not a sensible list right now, so let's change it back.
+Finally, let's remove Thailand from the list.  No good reason, we're acting on whimsy.
 
 
 ```python
-top_travel_cities[4] = 'Walla Walla Valley'
+countries = ['Croatia',
+ 'USA',
+ 'Argentina',
+ 'Mexico',
+ 'USA',
+ 'Morocco',
+ 'USA',
+ 'Finland',
+ 'Argentina',
+ 'Italy',
+ 'Canada',
+ 'South Korea', 
+ 'Malta', 
+ 'Thailand']
+countries.pop() # 'Thailand'
+countries
+# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland',  'Argentina', 'Italy', 'Canada', 'South Korea',  'Malta']
 ```
 
-And our list is alright.
+### Exploring Lists with Methods
+
+Ok, now we notice that some countries are mentioned more than once.  Let's see how many repeat countries are on this list.  
+
+First, use the `set` and `list` functions to return a unique list of countries.  Set this list equal to the variable `unique_countries`.
 
 
 ```python
-top_travel_cities
+unique_countries = None
 ```
 
 
+```python
+unique_countries # ['USA',  'South Korea',  'Morocco',  'Finland',  'Italy', 
+# 'Mexico',  'Argentina', 'Malta', 'Croatia', 'New Mexico', 'Canada']
+```
+
+Now the number of repeat countries should be the number of countries minus the number of unique countries.  So use the `len` function on both `unique_countries` and `countries` to calculate this and assign the result to the variable `num_of_repeats`.
 
 
-    ['Solta',
-     'Greenville',
-     'Buenos Aires',
-     'Los Cabos',
-     'Walla Walla Valley',
-     'Marakesh',
-     'Albuquerque',
-     'Archipelago Sea',
-     'Iguazu Falls',
-     'Salina Island',
-     'Toronto',
-     'Pyeongchang']
-
-
+```python
+num_of_repeats = None
+num_of_repeats # 3
+```
 
 ### Summary
 
-In this section we saw how to associate data together in a collection, called a list.  A list is similar to a list in the real world - it implies the data has some connection, and that it has an order to it.  We initialize a list with the brackets, `[]`, and separate each element by a comma.  To access elements from a list, we use the bracket accessor followed by the index of the element we want to retrieve.  And our indices began at zero and increase from there.  To add a new element to the end of the list we use the `append` method, and to remove an element from the end of a list we use `pop`.  We can change elements anywhere between by first accessing the elements and then reassigning them.
+In this section we saw how to get our data from the outside world and into Python.  The purpose isn't to understand all of this code right now, but rather to see how easily we can start working with outside data.  As we become better at Python, the usefulness of taking data and operating on it in code rather than a spreadsheet will become more apparent.  But that doesn't mean we can't get step outside of Python sandbox now.  It's not too difficult to take some data we may already have, and begin to use it with Python.  In the next section, we'll use a lab to get data from excel and work with lists.
