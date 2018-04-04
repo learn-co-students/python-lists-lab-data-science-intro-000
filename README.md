@@ -3,13 +3,13 @@
 
 ### Introduction
 
-Ok, so now that we have gotten a sense of how to read from a list and alter a list in Python, let's put this knowledge to practice. 
+Ok, so now that we have a sense of how to read from a list and alter a list in Python, let's put this knowledge to use. 
 
 ### Objectives
 
 * Practice reading one and multiple elements from lists
 * Practice altering data in lists
-* Practice add elements and removing elements from lists
+* Practice adding elements and removing elements from lists
 
 ### Our initial data structure 
 
@@ -20,9 +20,9 @@ In the previous lesson, we had a list of top travel cities.
 top_travel_cities = ['Solta', 'Greenville', 'Buenos Aires', 'Los Cabos', 'Walla Walla Valley', 'Marakesh', 'Albuquerque', 'Archipelago Sea', 'Iguazu Falls', 'Salina Island', 'Toronto', 'Pyeongchang']
 ```
 
-> Remember to press shift enter to run each gray block of code.
+> Remember to press shift+enter to run each gray block of code (including the one above).  Otherwise, the variables will not be defined.
 
-In this lesson we can work with a list of each associated countries for each of those travel cities.
+In this lesson we can work with a list of associated countries corresponding to each of the top travel cities.
 
 
 ```python
@@ -40,11 +40,14 @@ countries = ['Croatia',
  'South Korea']
 ```
 
+> Run the code in the cell above by pressing shift + enter.
+
 Ok, so the list of countries associated with each city has been assigned to the variable `countries`.  Now we will work with reading and manipulating this list.
 
 ### Accessing elements from lists
 
-First, access the third to last element from `countries` and set it equal to the variable `italy`.
+First, set the variable `italy` to be equal to the third to last element from `countries`.  
+>**Note:** If you see an **error** stating that `countries` is undefined, it means you must press shift+enter in the second gray box where `countries` variable is assigned.
 
 
 ```python
@@ -52,7 +55,7 @@ italy = None # 'Italy'
 italy
 ```
 
-> We assign the varible `italy` equal to `None`, but you should change the word `None` to code that uses the `countries` list to assign `italy` to `'Italy'`.
+> We assign the variable `italy` equal to `None`, but you should change the word `None` to code that uses the `countries` list to assign `italy` to `'Italy'`.  We wrote the variable `italy` a second time, so that you can see what it equals when you run the code block.  Currently, nothing is displayed below as it equals `None`, but when it's correct it will match the string which is commented out, `'Italy'`.
 
 
 ```python
@@ -150,7 +153,8 @@ unique_countries = None
 
 
 ```python
-unique_countries # ['USA',  'South Korea',  'Morocco',  'Finland',  'Italy', 
+unique_countries 
+# ['USA',  'South Korea',  'Morocco',  'Finland',  'Italy', 
 # 'Mexico',  'Argentina', 'Malta', 'Croatia', 'New Mexico', 'Canada']
 ```
 
@@ -164,4 +168,4 @@ num_of_repeats # 3
 
 ### Summary
 
-In this section we saw how to get our data from the outside world and into Python.  The purpose isn't to understand all of this code right now, but rather to see how easily we can start working with outside data.  As we become better at Python, the usefulness of taking data and operating on it in code rather than a spreadsheet will become more apparent.  But that doesn't mean we can't get step outside of Python sandbox now.  It's not too difficult to take some data we may already have, and begin to use it with Python.  In the next section, we'll use a lab to get data from excel and work with lists.
+In this lesson, we practiced working with lists in Python.  We saw how to add and remove elements from a list, as well as select specific elements.  Finally, we saw how to use a different data structure to calculate the number unique elements in the list.
