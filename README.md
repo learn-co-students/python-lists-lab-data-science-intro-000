@@ -1,5 +1,5 @@
 
-# UI Testing Lists Lab 
+# Lists Lab 
 
 ### Introduction
 
