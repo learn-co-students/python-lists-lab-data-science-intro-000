@@ -140,25 +140,6 @@ countries
 # ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland',  'Argentina', 'Italy', 'Canada', 'South Korea',  'Malta']
 ```
 
-
-
-
-    ['Croatia',
-     'USA',
-     'Argentina',
-     'Mexico',
-     'USA',
-     'Morocco',
-     'USA',
-     'Finland',
-     'Argentina',
-     'Italy',
-     'Canada',
-     'South Korea',
-     'Malta']
-
-
-
 ### Exploring Lists with Methods
 
 Ok, now we notice that some countries are mentioned more than once.  Let's see how many repeat countries are on this list.  
@@ -172,8 +153,8 @@ unique_countries = None
 
 
 ```python
-unique_countries # ['Canada', 'Italy', 'USA', 'Mexico', 'Finland', 
-#'Malta', 'Morocco', 'Croatia', 'Argentina', 'South Korea']
+unique_countries  # ['USA', 'Finland', 'Argentina', 'South Korea', 'Morocco',
+#'Croatia','Mexico','Malta','Italy','Canada']
 ```
 
 Now the number of repeat countries should be the number of countries minus the number of unique countries.  So use the `len` function on both `unique_countries` and `countries` to calculate this and assign the result to the variable `num_of_repeats`.
