@@ -107,7 +107,7 @@ You may have noticed that "New Mexico" is included in our list of countries.  Th
 
 
 ```python
-None # add code here
+countries = None # add code here
 ```
 
 
@@ -153,8 +153,8 @@ unique_countries = None
 
 
 ```python
-unique_countries  # ['USA', 'Finland', 'Argentina', 'South Korea', 'Morocco',
-#'Croatia','Mexico','Malta','Italy','Canada']
+unique_countries  # ['Croatia', 'Argentina', 'Canada', 'Mexico', 'Italy', 
+#'South Korea', 'USA', 'Morocco', 'Malta', 'Finland'] Note: order of countries may be different
 ```
 
 Now the number of repeat countries should be the number of countries minus the number of unique countries.  So use the `len` function on both `unique_countries` and `countries` to calculate this and assign the result to the variable `num_of_repeats`.
