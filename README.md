@@ -20,12 +20,35 @@ In the previous lesson, we had a list of top travel cities.
 top_travel_cities = ['Solta', 'Greenville', 'Buenos Aires', 'Los Cabos', 'Walla Walla Valley', 'Marakesh', 'Albuquerque', 'Archipelago Sea', 'Iguazu Falls', 'Salina Island', 'Toronto', 'Pyeongchang']
 ```
 
+
+```python
+# __SOLUTION__
+top_travel_cities = ['Solta', 'Greenville', 'Buenos Aires', 'Los Cabos', 'Walla Walla Valley', 'Marakesh', 'Albuquerque', 'Archipelago Sea', 'Iguazu Falls', 'Salina Island', 'Toronto', 'Pyeongchang']
+```
+
 > Remember to press shift+enter to run each gray block of code (including the one above).  Otherwise, the variables will not be defined.
 
 In this lesson we will work with a list of associated countries corresponding to each of the top travel cities.
 
 
 ```python
+countries = ['Croatia',
+ 'USA',
+ 'Argentina',
+ 'Mexico',
+ 'USA',
+ 'Morocco',
+ 'New Mexico',
+ 'Finland',
+ 'Argentina',
+ 'Italy',
+ 'Canada',
+ 'South Korea']
+```
+
+
+```python
+# __SOLUTION__
 countries = ['Croatia',
  'USA',
  'Argentina',
@@ -55,12 +78,39 @@ italy = None # 'Italy'
 italy
 ```
 
+
+```python
+# __SOLUTION__
+italy = countries[-3]
+italy
+```
+
+
+
+
+    'Italy'
+
+
+
 > We assign the varible `italy` equal to `None`, but you should change the word `None` to code that uses the `countries` list to assign `italy` to `'Italy'`.  We wrote the variable `italy` a second time, so that you can see what it equals when you run the code block.  Currently, nothing is displayed below as it equals `None`, but when it's correct it will match the string which is commented out, `'Italy'`.
 
 
 ```python
 italy # 'Italy'
 ```
+
+
+```python
+# __SOLUTION__
+italy # 'Italy'
+```
+
+
+
+
+    'Italy'
+
+
 
 Now access the fourth element and set it equal to the variable `mexico`.
 
@@ -70,6 +120,20 @@ mexico = None
 mexico
 ```
 
+
+```python
+# __SOLUTION__
+mexico = countries[3]
+mexico
+```
+
+
+
+
+    'Mexico'
+
+
+
 Notice that the second through fifth elements are all in a row and all in the Western Hemisphere.  Assign that subset of elements to a variable called `kindof_neighbors`.
 
 
@@ -77,6 +141,20 @@ Notice that the second through fifth elements are all in a row and all in the We
 kindof_neighbors = None
 kindof_neighbors
 ```
+
+
+```python
+# __SOLUTION__
+kindof_neighbors = countries[1:5]
+kindof_neighbors
+```
+
+
+
+
+    ['USA', 'Argentina', 'Mexico', 'USA']
+
+
 
 ### Changing Elements
 
@@ -87,12 +165,65 @@ Ok, now let's add a couple of countries onto this list.  At the end of the list,
 None # add code here
 ```
 
+
+```python
+# __SOLUTION__
+countries.append('Malta')
+countries
+```
+
+
+
+
+    ['Croatia',
+     'USA',
+     'Argentina',
+     'Mexico',
+     'USA',
+     'Morocco',
+     'New Mexico',
+     'Finland',
+     'Argentina',
+     'Italy',
+     'Canada',
+     'South Korea',
+     'Malta']
+
+
+
 Then add the country 'Thailand'.
 
 
 ```python
 None # add code here
 ```
+
+
+```python
+# __SOLUTION__
+countries.append('Thailand')
+countries
+```
+
+
+
+
+    ['Croatia',
+     'USA',
+     'Argentina',
+     'Mexico',
+     'USA',
+     'Morocco',
+     'New Mexico',
+     'Finland',
+     'Argentina',
+     'Italy',
+     'Canada',
+     'South Korea',
+     'Malta',
+     'Thailand']
+
+
 
 Now your list of countries should look like the following.
 
@@ -103,11 +234,45 @@ countries
 # 'Argentina', 'Italy',  'Canada', 'South Korea',  'Malta',  'Thailand']
 ```
 
+
+```python
+# __SOLUTION__
+countries 
+# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'New Mexico', 'Finland', 
+# 'Argentina', 'Italy',  'Canada', 'South Korea',  'Malta',  'Thailand']
+```
+
+
+
+
+    ['Croatia',
+     'USA',
+     'Argentina',
+     'Mexico',
+     'USA',
+     'Morocco',
+     'New Mexico',
+     'Finland',
+     'Argentina',
+     'Italy',
+     'Canada',
+     'South Korea',
+     'Malta',
+     'Thailand']
+
+
+
 You may have noticed that "New Mexico" is included in our list of countries.  That doesn't seem right.  Let's change 'New Mexico' to 'USA'.
 
 
 ```python
-None # add code here
+countries = None # add code here
+```
+
+
+```python
+# __SOLUTION__
+countries[6] = "USA"
 ```
 
 
@@ -116,6 +281,34 @@ countries
 # ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland', 
 # 'Argentina', 'Italy',  'Canada', 'South Korea',  'Malta',  'Thailand']
 ```
+
+
+```python
+# __SOLUTION__
+countries 
+# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland', 
+# 'Argentina', 'Italy',  'Canada', 'South Korea',  'Malta',  'Thailand']
+```
+
+
+
+
+    ['Croatia',
+     'USA',
+     'Argentina',
+     'Mexico',
+     'USA',
+     'Morocco',
+     'USA',
+     'Finland',
+     'Argentina',
+     'Italy',
+     'Canada',
+     'South Korea',
+     'Malta',
+     'Thailand']
+
+
 
 Finally, let's remove Thailand from the list.  No good reason, we're acting on whimsy.
 
@@ -140,6 +333,47 @@ countries
 # ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland',  'Argentina', 'Italy', 'Canada', 'South Korea',  'Malta']
 ```
 
+
+```python
+# __SOLUTION__
+countries = ['Croatia',
+ 'USA',
+ 'Argentina',
+ 'Mexico',
+ 'USA',
+ 'Morocco',
+ 'USA',
+ 'Finland',
+ 'Argentina',
+ 'Italy',
+ 'Canada',
+ 'South Korea', 
+ 'Malta', 
+ 'Thailand']
+countries.pop() # 'Thailand'
+countries
+# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland',  'Argentina', 'Italy', 'Canada', 'South Korea',  'Malta']
+```
+
+
+
+
+    ['Croatia',
+     'USA',
+     'Argentina',
+     'Mexico',
+     'USA',
+     'Morocco',
+     'USA',
+     'Finland',
+     'Argentina',
+     'Italy',
+     'Canada',
+     'South Korea',
+     'Malta']
+
+
+
 ### Exploring Lists with Methods
 
 Ok, now we notice that some countries are mentioned more than once.  Let's see how many repeat countries are on this list.  
@@ -153,9 +387,38 @@ unique_countries = None
 
 
 ```python
-unique_countries  # ['USA', 'Finland', 'Argentina', 'South Korea', 'Morocco',
-#'Croatia','Mexico','Malta','Italy','Canada']
+# __SOLUTION__
+unique_countries = list(set(countries))
 ```
+
+
+```python
+unique_countries  # ['Croatia', 'Argentina', 'Canada', 'Mexico', 'Italy', 
+#'South Korea', 'USA', 'Morocco', 'Malta', 'Finland'] Note: order of countries may be different
+```
+
+
+```python
+# __SOLUTION__
+unique_countries  # ['Croatia', 'Argentina', 'Canada', 'Mexico', 'Italy', 
+#'South Korea', 'USA', 'Morocco', 'Malta', 'Finland'] Note: order of countries may be different
+```
+
+
+
+
+    ['Croatia',
+     'Argentina',
+     'Canada',
+     'Mexico',
+     'Italy',
+     'South Korea',
+     'USA',
+     'Morocco',
+     'Malta',
+     'Finland']
+
+
 
 Now the number of repeat countries should be the number of countries minus the number of unique countries.  So use the `len` function on both `unique_countries` and `countries` to calculate this and assign the result to the variable `num_of_repeats`.
 
@@ -164,6 +427,20 @@ Now the number of repeat countries should be the number of countries minus the n
 num_of_repeats = None
 num_of_repeats # 3
 ```
+
+
+```python
+# __SOLUTION__
+num_of_repeats = len(countries) - len(unique_countries)
+num_of_repeats #3
+```
+
+
+
+
+    3
+
+
 
 ### Summary
 
