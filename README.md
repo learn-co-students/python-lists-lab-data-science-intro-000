@@ -3,7 +3,7 @@
 
 ### Introduction
 
-Ok, so now that we have a sense of how to read from a list and alter a list in Python, let's put this knowledge to use. 
+Ok, so now that we have a sense of how to read from and alter a list in Python, let's put this knowledge to use. 
 
 ### Objectives
 
