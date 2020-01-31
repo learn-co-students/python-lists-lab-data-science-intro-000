@@ -1,9 +1,9 @@
 
-# Lists Lab 
+# Lists Lab
 
 ### Introduction
 
-Ok, so now that we have a sense of how to read and alter a list in Python, let's put this knowledge to use. 
+Ok, so now that we have a sense of how to read and alter a list in Python, let's put this knowledge to use.
 
 ### Objectives
 
@@ -11,7 +11,7 @@ Ok, so now that we have a sense of how to read and alter a list in Python, let's
 * Practice altering data in lists
 * Practice adding elements and removing elements from lists
 
-### Our initial data structure 
+### Our initial data structure
 
 In the previous lesson, we had a list of top travel cities.
 
@@ -98,8 +98,8 @@ Now your list of countries should look like the following.
 
 
 ```python
-countries 
-# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'New Mexico', 'Finland', 
+countries
+# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'New Mexico', 'Finland',
 # 'Argentina', 'Italy',  'Canada', 'South Korea',  'Malta',  'Thailand']
 ```
 
@@ -112,8 +112,8 @@ countries = None # add code here
 
 
 ```python
-countries 
-# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland', 
+countries
+# ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', 'USA', 'Finland',
 # 'Argentina', 'Italy',  'Canada', 'South Korea',  'Malta',  'Thailand']
 ```
 
@@ -132,8 +132,8 @@ countries = ['Croatia',
  'Argentina',
  'Italy',
  'Canada',
- 'South Korea', 
- 'Malta', 
+ 'South Korea',
+ 'Malta',
  'Thailand']
 countries.pop() # 'Thailand'
 countries
@@ -149,11 +149,14 @@ First, use the `set` and `list` functions to return a unique list of countries. 
 
 ```python
 unique_countries = None
+type(set())
+unqiue_countries_set = set(countries)
+unique_countries = list(unqiue_countries_set)
 ```
 
 
 ```python
-unique_countries  # ['Croatia', 'Argentina', 'Canada', 'Mexico', 'Italy', 
+unique_countries  # ['Croatia', 'Argentina', 'Canada', 'Mexico', 'Italy',
 #'South Korea', 'USA', 'Morocco', 'Malta', 'Finland'] Note: order of countries may be different
 ```
 
